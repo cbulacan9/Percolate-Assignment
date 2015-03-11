@@ -8,7 +8,10 @@ window.Percolate = {
     Routers: {},
     init: function () {
         'use strict';
-        console.log('Hello from Backbone!');
+        var navbar = new Percolate.Views.Navbar({el: $('.header-container')});
+        navbar.render();
+
+
     }
 };
 
