@@ -25,7 +25,7 @@ Percolate.Views = Percolate.Views || {};
             this.$el.html(this.template());
             return this;
         }
-
+        
     });
 
 })();

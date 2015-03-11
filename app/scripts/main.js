@@ -10,8 +10,6 @@ window.Percolate = {
         'use strict';
         var navbar = new Percolate.Views.Navbar({el: $('.header-container')});
         navbar.render();
-
-
     }
 };
 

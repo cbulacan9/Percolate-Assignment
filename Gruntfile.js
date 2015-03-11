@@ -167,6 +167,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        less: {
+           dist: {
+                files: {
+                    '<%= yeoman.dist %>/styles/main.css': [
+                        '.tmp/styles/{,*/}*.less',
+                        '<%= yeoman.app %>/styles/{,*/}*.less'
+                    ]
+                }
+            }
+        },
         htmlmin: {
             dist: {
                 options: {
@@ -281,6 +291,8 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-less');
+
     grunt.registerTask('build', [
         'clean:dist',
         'createDefaultTemplate',
@@ -299,6 +311,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'jshint',
         'test',
+        'less',
         'build'
     ]);
 };
