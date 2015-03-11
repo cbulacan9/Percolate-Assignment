@@ -1,0 +1,52 @@
+.header-container {
+  width: 1100px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+header {
+  a {
+    color: @percolate-blue;
+  }
+  height: inherit;
+  div {
+    height: inherit;
+    float: left;
+  }
+  .logo {
+    a {
+      line-height: 90px;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 200px;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: .25em;
+    li {
+      display: inline;
+      margin: 0 0.9em;
+      a {
+        line-height: 100px;
+        vertical-align: bottom;
+        height: inherit;
+      }
+    }
+  }
+  .primary-navigation {
+    font-size: 1.125em;
+    vertical-align: bottom;
+  }
+  .secondary-navigation {
+    font-size: .8125em;
+    .request-demo a {
+      border: solid @percolate-blue 1px;
+      font-weight: bold;
+      padding: 0.5em;
+    }  
+  }
+}

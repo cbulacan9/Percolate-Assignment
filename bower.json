@@ -8,7 +8,8 @@
     "modernizr": "~2.7.1",
     "backbone.localStorage": "~1.1.16",
     "less": "~2.4.0",
-    "flexible.gs": "~3.0.3"
+    "flexible.gs": "~3.0.3",
+    "bootstrap": "~3.3.2"
   },
   "devDependencies": {}
 }

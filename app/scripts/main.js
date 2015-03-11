@@ -1,6 +1,5 @@
 /*global Percolate, $*/
 
-
 window.Percolate = {
     Models: {},
     Collections: {},

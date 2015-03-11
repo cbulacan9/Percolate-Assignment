@@ -1,29 +1,11 @@
-@blue-text: #0a506c;
-@lg: 1024px;
-@md: 768px;
-@sm: 667px;
-@xs: 414px;
+@percolate-blue: #0a506c;
 
-@import "../bower_components/flexible.gs/dynamic/less/flexiblegs/flexiblegs.less";
-@import "navbar.less";
+@import "_navbar.less";
 
-body {
-  overflow: hidden;
+html {
+  font-family: Times;
 }
-.column {
-  background: #3A99D8;
-  color: #ffffff;
-  line-height:50px;
-}
-ul {
-  background: white;
-  padding-left:0;
-  list-style:none;
-}
+
 a {
-  display:block;
-  text-decoration:none;
-  background: white;
-  color: @blue-text;
-  line-height:50px;
+  text-decoration: none;
 }
