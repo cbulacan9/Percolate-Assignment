@@ -15,10 +15,15 @@ Percolate.Views = Percolate.Views || {};
 
         className: 'header-container',
 
-        events: {},
+        events: {
+            'click div.show-menu': 'showMenu'
+        },
+
+        showMenu: function(e) {
+            $('div.navigation').toggle()
+        },
 
         initialize: function () {
-            // this.listenTo(this.model, 'change', this.render);
         },
 
         render: function () {
