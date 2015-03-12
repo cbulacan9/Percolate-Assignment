@@ -1,0 +1,74 @@
+div.splash-frame {
+	color: white;
+	width: 100%;
+	height: 340px;
+	margin-top: 40px;
+	background-image: url('../images/valve-splash.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 80%;
+}
+
+.splash-box {
+	position: relative;
+	width: @content-width;
+	margin: 0 auto;
+	background-color: rgba(241, 100, 33, 0.8);
+}
+
+.splash-content {
+	box-sizing: border-box;
+	padding: 40px;
+	height: inherit;
+	img {
+		width: 180px;
+		height: 49.23px;
+	}
+	h1 {
+		margin: 0px;
+	}
+}
+
+@media (min-width: 1150px) {
+	.splash-box {
+		top: -40px;
+		height: 340px;
+	}
+	.splash-content {
+		h1{ 
+			position: absolute;
+			font-size: 3.8em;
+			line-height: 1.2em;
+			bottom: 60px;
+		}
+	}
+}
+
+@media (max-width: 1150px) and (min-width: 720px) {
+	.splash-box {
+		height: inherit;
+	}
+	.splash-content {
+		h1 {
+			position: absolute;	
+			font-size: 3.8em;
+			line-height: 1.2em;
+			bottom: 60px	
+		}
+	}
+}
+
+@media (max-width: 720px) and (min-width: 260px) {
+	.splash-box {
+		width: @content-width;
+		height: inherit;
+	}
+	.splash-content {
+		h1 {
+			position: relative;
+			font-size: 2em;
+			line-height: 1em;
+			text-wrap: normal;
+		}
+	}
+}
