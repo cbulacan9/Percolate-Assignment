@@ -1,5 +1,6 @@
 div.splash-container {
 	max-width: 100%;
+	clear: both;
 }
 
 .splash-frame {
@@ -48,6 +49,7 @@ div.splash-container {
 
 @media (max-width: @content-width) and (min-width: 720px) {
 	.splash-box {
+		width: inherit;
 		height: inherit;
 	}
 	.splash-content {
@@ -60,7 +62,7 @@ div.splash-container {
 
 @media (max-width: 720px) and (min-width: 260px) {
 	.splash-box {
-		width: @content-width;
+		width: inherit;
 		height: inherit;
 	}
 	.splash-content {

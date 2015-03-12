@@ -15,6 +15,8 @@ window.Percolate = {
         highlight.render();
         var caseStudy = new Percolate.Views.CaseStudy({el: $('.case-study-container')});
         caseStudy.render();
+        var quote = new Percolate.Views.Quote({el: $('.quote-container')});
+        quote.render();
     }
 };
 

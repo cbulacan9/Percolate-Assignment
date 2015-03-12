@@ -1,14 +1,15 @@
-div.highlight-container {
+.highlight-container {
 	width: 100%;
 	margin-top: 60px;
 	.highlight {
 		
 		margin: 0 auto;
 	}
+	clear: both;
 }
 
 @media (min-width: @content-width) {
-	div.highlight {
+	.highlight {
 		width: @content-width;
 		p {
 			font-size: 24px;
@@ -18,7 +19,7 @@ div.highlight-container {
 }
 
 @media (max-width: @content-width) {
-	div.highlight {
+	.highlight {
 		width: inherit;
 		p {
 			font-size: 18px;
