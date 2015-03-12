@@ -13,6 +13,8 @@ window.Percolate = {
         splash.render();
         var highlight = new Percolate.Views.Highlight({el: $('.highlight-container')});
         highlight.render();
+        var caseStudy = new Percolate.Views.CaseStudy({el: $('.case-study-container')});
+        caseStudy.render();
     }
 };
 
