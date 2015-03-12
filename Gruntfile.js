@@ -177,15 +177,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        grunt.initConfig({
-          sass: {
-            dist: {
-              files: {
-                'main.css': 'main.scss'
-              }
-            }
-          }
-        });
         htmlmin: {
             dist: {
                 options: {
