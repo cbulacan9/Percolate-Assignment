@@ -1,6 +1,8 @@
 @percolate-blue: #0a506c;
 @percolate-orange: #f16321;
+@percolate-red: #A42C50;
 @percolate-plain: rgb(102, 102, 102);
+@percolate-muted: rgb(224, 226, 226);
 @content-width: 1100px;
 
 @import "_navbar.less";
@@ -8,9 +10,13 @@
 @import "_highlight.less";
 @import "_caseStudy.less";
 @import "_quote.less";
+@import "_action.less";
 
-html {
-	font-family: serif;
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	p {
+		font-family: serif; 
+	}
 	i {
 		color: @percolate-plain;
 	}
