@@ -11,6 +11,8 @@ window.Percolate = {
         navbar.render();
         var splash = new Percolate.Views.Splash({el: $('.splash-container')});
         splash.render();
+        var highlight = new Percolate.Views.Highlight({el: $('.highlight-container')});
+        highlight.render();
     }
 };
 
@@ -18,16 +20,16 @@ $(document).ready(function () {
     'use strict';
     Percolate.init();
 
-    var velcocity = 0.5;
+    // var velcocity = 0.5;
 
-    function update(){ 
-        var pos = $(window).scrollTop(); 
-        $('.splash-frame').each(function() { 
-            var $element = $(this);
-            var height = $element.height()-18;
-            $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); 
-        }); 
-    };
+    // function update(){ 
+    //     var pos = $(window).scrollTop(); 
+    //     $('.splash-frame').each(function() { 
+    //         var $element = $(this);
+    //         var height = $element.height()-18;
+    //         $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); 
+    //     }); 
+    // };
 
-    $(window).bind('scroll', update);
+    // $(window).bind('scroll', update);
 });
