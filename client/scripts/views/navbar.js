@@ -14,6 +14,7 @@ App.Views.Navbar = Backbone.View.extend({
   },
 
   showMenu: function(e) {
+    e.preventDefault;
     $('div.navigation').toggle();
   },
 
